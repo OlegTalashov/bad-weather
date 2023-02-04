@@ -1,7 +1,19 @@
 {
   "name": "bad-weather",
+  "author": "Oleg Talashov",
   "version": "0.1.0",
   "description": "Weather is fine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OlegTalashov/bad-weather.git"
+  },
+  "homepage": "https://github.com/OlegTalashov/bad-weather#readme",
+  "keywords": [
+    "weather widget"
+  ],
+  "files": [
+    "dist"
+  ],
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
