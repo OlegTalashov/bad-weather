@@ -1,26 +1,12 @@
 <template>
-  <div id="app">
     <div class="remove-this-div">
       <Header />
       {{ TestMsg }}
     </div>
-
-  </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Header from './assets/header/Header.vue';
+<script lang="ts" src="./BadWeather.ts">
 
-@Component({
-  name: 'Bad Weather',
-  components: {
-    Header,
-  }
-})
-export default class BadWeather extends Vue {
-  TestMsg: string = 'TestMsgContent';
-}
 </script>
 
 <style lang="scss">
