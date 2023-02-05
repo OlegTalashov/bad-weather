@@ -8,9 +8,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 
-@Component
-export default class Header extends Vue {
-    HeaderMsg: string = "HeaderMsgContent"
+export default {
+    name: 'Header',
+    data(){ 
+        return {
+            HeaderMsg: "HeaderMsgContent"
+        }
+    }
 }
 
 </script>

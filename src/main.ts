@@ -1,10 +1,17 @@
-import Vue from 'vue'
+// import Vue from 'vue'
+// import BadWeather from './BadWeather.vue'
+
+// // Vue.config.productionTip = false
+
+// // new Vue({
+// //   render: h => h(BadWeather),
+// // }).$mount('#app')
+
+// export default BadWeather
+
 import BadWeather from './BadWeather.vue'
+import Vue from 'vue'
 
-// Vue.config.productionTip = false
+export default Vue.component("BadWeather", BadWeather)
 
-// new Vue({
-//   render: h => h(BadWeather),
-// }).$mount('#app')
-
-export default BadWeather
+export { BadWeather };
