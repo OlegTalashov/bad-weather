@@ -5,7 +5,7 @@
   "author": {
     "name": "Oleg Talashov"
   },
-  "main": "dist/good-weather.min.js",
+  "main": "dist/src/good-weather.min.js",
   "scripts": {
     "build": "webpack --config webpack.prod.ts"
   },
@@ -15,7 +15,6 @@
   ],
   "license": "MIT",
   "files": [
-    "dist/src/",
     "README.md",
     "package.json"
   ],
