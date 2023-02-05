@@ -60,7 +60,7 @@ module.exports = {
         use: {
             loader: 'file-loader',
             options: {
-                outputPath: 'assets',
+                outputPath: 'src/assets',
                 name: '[name].[ext]'
             }
         }

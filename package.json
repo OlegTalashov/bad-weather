@@ -15,10 +15,10 @@
   ],
   "license": "MIT",
   "files": [
-    "dist",
+    "src/assets",
+    "src/good-weather.min.js",
     "README.md",
-    "package.json",
-    "assets"
+    "package.json"
   ],
   "dependencies": {
     "global": "^4.3.2",

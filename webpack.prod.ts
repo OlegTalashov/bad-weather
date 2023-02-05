@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: 'good-weather.min.js'
+    filename: 'src/good-weather.min.js'
   },
   plugins: [
     new UglifyJsPlugin({
