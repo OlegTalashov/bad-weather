@@ -1,5 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator';
-import Header from './components/header/Header';
+import Header from './Header/Header'
 
 @Component({
   name: 'GoodWeather',

@@ -1,3 +1,5 @@
+<script lang="ts" src="./GoodWeather.ts" />
+
 <template>
   <div id="app">
     <div class="remove-this-div">
@@ -8,32 +10,6 @@
   </div>
 </template>
 
-<script lang="ts" src="./GoodWeather.ts">
-// import { Component, Vue } from 'vue-property-decorator';
-// import Header from './components/header/Header';
-
-// @Component({
-//   name: 'GoodWeather',
-//   components: {
-//     Header,
-//   }
-// })
-// export default class GoodWeather extends Vue {
-//   TestMsg: string = 'TestMsgContent';
-// }
-
-// export default {
-//   name: 'BadWeather',
-//   components: {
-//     Header
-//   },
-//   data() {
-//     return {
-//       TestMsg: 'Hello',
-//     }
-//   }
-// }
-</script>
 
 <style lang="scss">
 
