@@ -1,3 +1,4 @@
+const path = require('path');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.ts');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -5,6 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = merge(common, {
   mode: 'production',
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'src/good-weather.min.js'
   },
   plugins: [

@@ -15,8 +15,7 @@
   ],
   "license": "MIT",
   "files": [
-    "src/assets",
-    "src/good-weather.min.js",
+    "dist/src/",
     "README.md",
     "package.json"
   ],
