@@ -54,7 +54,17 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [ 'vue-style-loader', 'css-loader' ]
-      }
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg)$/,
+        use: {
+            loader: 'file-loader',
+            options: {
+                outputPath: 'assets',
+                name: '[name].[ext]'
+            }
+        }
+    }
     ]
   },
   plugins: [
