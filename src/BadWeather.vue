@@ -10,16 +10,28 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Header from './assets/header/Header.vue';
+import Header from './components/header/Header.vue';
 
-@Component({
-  name: 'Bad Weather',
+// @Component({
+//   name: 'Bad Weather',
+//   components: {
+//     Header,
+//   }
+// })
+// export default class BadWeather extends Vue {
+//   TestMsg: string = 'TestMsgContent';
+// }
+
+export default {
+  name: 'BadWeather',
   components: {
-    Header,
+    Header
+  },
+  data() {
+    return {
+      TestMsg: 'Hello',
+    }
   }
-})
-export default class BadWeather extends Vue {
-  TestMsg: string = 'TestMsgContent';
 }
 </script>
 

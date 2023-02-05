@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import BadWeather from './BadWeather.vue'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(BadWeather),
-}).$mount('#app')
+// new Vue({
+//   render: h => h(BadWeather),
+// }).$mount('#app')
+
+export default BadWeather
