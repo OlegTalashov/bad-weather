@@ -1,3 +1,4 @@
+
 module.exports = {
   presets: [
     '@vue/cli-plugin-babel/preset'
@@ -15,7 +16,13 @@ module.exports = (api) => {
               },
               useBuiltIns: "usage"
           }],
-      ],	
+          '@babel/preset-typescript'      
+      ],
+      plugins: [ 
+        ["@babel/plugin-proposal-decorators", {legacy: true}],
+        "@babel/plugin-transform-typescript",
+        "@babel/plugin-proposal-class-properties"
+    ]
   };
 
   if(isTest) {

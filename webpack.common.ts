@@ -5,12 +5,6 @@ const projectRoot = path.resolve(__dirname, './');
 
 const { VueLoaderPlugin } = require('vue-loader');
 
-const banner = [
-  'good-weather v' + npmCfg.version,
-  '(c) ' + (new Date().getFullYear()) + ' ' + npmCfg.author,
-  npmCfg.homepage
-].join('\n')
-
 module.exports = {
   entry: './src/main.ts',
   output: {
@@ -56,11 +50,23 @@ module.exports = {
       {
         test: /\.css$/,
         use: [ 'vue-style-loader', 'css-loader' ]
+      },
+      {
+        test: /\.scss$/,
+        use: [ 'vue-style-loader', 'css-loader' ]
       }
     ]
   },
   plugins: [
-    new webpack.BannerPlugin(banner),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        vue: {
+          compilerOptions: {
+            decoratorsLegacy: true
+          }
+        }
+      }
+    })
   ]
 }

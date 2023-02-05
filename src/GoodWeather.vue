@@ -8,34 +8,34 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Header from './components/header/Header.vue';
+<script lang="ts" src="./GoodWeather.ts">
+// import { Component, Vue } from 'vue-property-decorator';
+// import Header from './components/header/Header';
 
 // @Component({
-//   name: 'Bad Weather',
+//   name: 'GoodWeather',
 //   components: {
 //     Header,
 //   }
 // })
-// export default class BadWeather extends Vue {
+// export default class GoodWeather extends Vue {
 //   TestMsg: string = 'TestMsgContent';
 // }
 
-export default {
-  name: 'BadWeather',
-  components: {
-    Header
-  },
-  data() {
-    return {
-      TestMsg: 'Hello',
-    }
-  }
-}
+// export default {
+//   name: 'BadWeather',
+//   components: {
+//     Header
+//   },
+//   data() {
+//     return {
+//       TestMsg: 'Hello',
+//     }
+//   }
+// }
 </script>
 
-<style>
+<style lang="scss">
 
 /*************** TODO Remove */
 .remove-this-div{

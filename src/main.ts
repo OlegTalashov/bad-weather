@@ -9,9 +9,9 @@
 
 // export default BadWeather
 
-import BadWeather from './BadWeather.vue'
+import GoodWeather from './GoodWeather.vue'
 import Vue from 'vue'
 
-export default Vue.component("BadWeather", BadWeather)
+export default Vue.component("GoodWeather", GoodWeather)
 
-export { BadWeather };
+export { GoodWeather };
